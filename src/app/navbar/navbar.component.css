@@ -1,0 +1,34 @@
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav .menu-img{
+    height:13vh;
+    width:13vw;
+    margin-right: 25px;
+    margin-left: 100px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+    font-size:x-large;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
