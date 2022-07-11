@@ -1,0 +1,41 @@
+<div class="body">
+    <div class="sidebar">
+        <div class="logo">
+            
+          <h1 class="logoheading">MadBatter</h1>
+        </div>
+        <div class="sidebaroptions">
+         
+            <button class="input-btn-dash">
+                <p>DashBoard</p>
+            </button>
+            <button class="input-btn-manag" >
+                <p>Mangement</p>
+            </button>
+            <button class="input-btn-dash" >
+                <p>Sand-Box</p>
+            </button>
+            <button class="input-btn-logout" (click)="logout()" >
+                <p>Log Out</p>
+            </button>
+        </div>
+    </div>
+    <div class=content>
+    <h1 class="projectheading">Admin Tool</h1>
+       <h1 class="heading">Management Center</h1>
+       <div class="firstrowofcomponents">
+            <div class="productrecords">
+              <app-productrecord></app-productrecord>
+            </div>
+            <div class="categoryrecords">
+             <app-categoryrecord></app-categoryrecord>
+            </div>
+        </div>
+        <div class="secondrowofcomponents">
+            <div class="userrecords">
+                <app-userrecord></app-userrecord>
+            </div>
+            
+        </div>
+    </div>
+</div>

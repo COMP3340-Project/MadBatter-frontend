@@ -1,0 +1,45 @@
+<div class="componentheader">
+    <div class="subheadingtext">
+        <h1 class="subheading">User Records</h1>
+    </div>
+    <div class="subheadingbutton">
+        <button class="dropdownselection" mat-button (click)="openadd()">Add</button>
+        <button class="dropdownselection" mat-button (click)="opendelete()">
+            Delete
+          </button>
+        <button class="dropdownselection" mat-button (click)="refresh()">Refresh</button>
+    </div>
+</div>
+<div class="table">
+
+    <h1 *ngIf="users.length < 1" class="loading">loading ...</h1>
+
+    <table *ngIf="users.length > 1" datatable class="row-border hover">
+    <thead>
+    <tr>
+        <th style="text-align: start; padding-left: 0.7vw ;" class="tablequantity">User Name</th>
+        <th style="text-align: start;" class="tablequantity">User Email</th>
+        <th style="text-align: start;" class="tablequantity">User Phone</th>
+        <th style="text-align: start;" class="tablequantity">User Address</th>
+    </tr>
+    <tr>
+        <th style="text-align: start; padding-left: 0.7vw ;" class="tablequantity"><hr></th>
+        <th style="text-align: start;" class="tablequantity"><hr></th>
+        <th style="text-align: start;" class="tablequantity"><hr></th>
+        <th style="text-align: start;" class="tablequantity"><hr></th>
+    </tr>
+    </thead>
+    <tbody>
+     <!--<tr *ngFor="let mat of mats">
+            <td class="tablematerial">{{mat.MaterialId}}</td>
+            <td class="tablequantity">{{mat.MaterialName}}</td>
+        </tr>-->   
+    <tr *ngFor="let user of users">
+        <td style="text-align: start; padding-left: 0.7vw ;" class="tablequantity">{{user.user_name}}</td>
+        <td style="text-align: start;" class="tablequantity">{{user.user_email}}</td>
+        <th style="text-align: start;" class="tablequantity">{{user.user_phone}}</th>
+        <th style="text-align: start;" class="tablequantity">{{user.user_address}}</th>
+    </tr>
+    </tbody>
+</table>
+</div>
