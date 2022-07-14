@@ -43,6 +43,27 @@ export class Adminservice {
     return this.allproducts;
   }
 
+  createProducts(product_name:string,product_description:string,category_id:string){
+    
+    const postData = {
+      product_name: product_name,
+      product_description: product_description,
+      category_id:parseInt(category_id)
+  };
+
+  return this.http.post<any>(`${environment.apiUrl}/api/v1/products/add`, postData)
+  
+}
+
+deleteproduct(productname:string,categoryid:number){
+  const postData = {
+    product_name: productname,
+    category_id: categoryid
+};
+
+return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postData)
+}
+
   productcategory(){
     this.allproductcategory.length = 0;
     this.http.get<any>(`${environment.apiUrl}/api/v1/productcategory`).subscribe({
@@ -64,6 +85,24 @@ export class Adminservice {
     return this.allproductcategory;
   }
 
+  createProductCategory(categoryname:string){
+    
+    const postData = {
+      category_name: categoryname
+  };
+
+  return this.http.post<any>(`${environment.apiUrl}/api/v1/productcategory/add`, postData)
+
+  }
+
+  deleteproductcategory(categoryname:string){
+    const postData = {
+      category_name: categoryname
+  };
+
+  return this.http.post<any>(`${environment.apiUrl}/api/v1/productcategory/delete`, postData)
+  }
+
   users(){
     this.allusers.length = 0;
     this.http.get<any>(`${environment.apiUrl}/api/v1/users`).subscribe({
@@ -83,6 +122,31 @@ export class Adminservice {
 
     console.log(this.allusers)
     return this.allusers;
+  }
+
+  createUser(username:string, useremail:string, userpassword: string, userphone:string, useraddress:string){
+
+    const postData = {
+      user_name: username,
+      user_email: useremail ,
+      user_password: userpassword,
+      user_phone: userphone,
+      user_address: useraddress
+    };
+
+  return this.http.post<any>(`${environment.apiUrl}/api/v1/users/add`, postData)
+
+  }
+
+  deleteuser(username:string, useremail:TemplateStringsArray){
+
+    const postData = {
+      user_name: username,
+      user_email: useremail 
+    };
+
+  return this.http.post<any>(`${environment.apiUrl}/api/v1/users/delete`, postData)
+
   }
 
 

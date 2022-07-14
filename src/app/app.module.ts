@@ -10,7 +10,15 @@ import { CategoryrecordComponent } from './admin/managcomponents/categoryrecord/
 import { UserrecordComponent } from './admin/managcomponents/userrecord/userrecord.component';
 import { Adminservice } from './services/admin.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CreateproductComponent } from './admin/modify-entries/create/createproduct/createproduct.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateproductcategoryComponent } from './admin/modify-entries/create/createproductcategory/createproductcategory.component';
+import { CreateuserComponent } from './admin/modify-entries/create/createuser/createuser.component';
+import { DeleteproductComponent } from './admin/modify-entries/delete/deleteproduct/deleteproduct.component';
+import { DeleteproductcategoryComponent } from './admin/modify-entries/delete/deleteproductcategory/deleteproductcategory.component';
+import { DeleteuserComponent } from './admin/modify-entries/delete/deleteuser/deleteuser.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +29,25 @@ import { HttpClientModule } from '@angular/common/http';
     ProductrecordComponent,
     CategoryrecordComponent,
     UserrecordComponent,
+    CreateproductComponent,
+    CreateproductcategoryComponent,
+    CreateuserComponent,
+    DeleteproductComponent,
+    DeleteproductcategoryComponent,
+    DeleteuserComponent,
   
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
     HttpClientModule,
     BrowserModule,
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
       {path: 'admin/management', component: ManagpageComponent},
     ]),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

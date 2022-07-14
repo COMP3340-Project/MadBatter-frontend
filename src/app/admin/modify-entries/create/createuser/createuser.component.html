@@ -1,0 +1,37 @@
+<div class="body">
+    <h1 mat-dialog-title class="heading">Add Material Type Record</h1>
+    
+    <form [formGroup]="Form">
+    
+            <h2 class="subheading">Enter User Name:</h2>
+                <input matInput
+                       formControlName="username"
+                       class="input">
+
+                       <h2 class="subheading">Enter User Email:</h2>
+                <input matInput
+                       formControlName="useremail"
+                       class="input">
+
+            <h2 class="subheading">Enter User Password :</h2>
+                <input matInput
+                       formControlName="userpswd"
+                       class="input">
+            
+            <h2 class="subheading">Enter User Phone :</h2>
+                <input matInput
+                        formControlName="userphone"
+                        class="input">
+
+            <h2 class="subheading">Enter User Address :</h2>
+                <input matInput
+                        formControlName="useradd"
+                        class="input">
+            
+    </form>
+    
+    <mat-dialog-actions>
+        <button class="mat-raised-button btn"(click)="close()" >Close</button>
+        <button class="mat-raised-button mat-primary btn"(click)="save()" >Save</button>
+    </mat-dialog-actions>
+    </div>
