@@ -19,6 +19,9 @@ import { CreateuserComponent } from './admin/modify-entries/create/createuser/cr
 import { DeleteproductComponent } from './admin/modify-entries/delete/deleteproduct/deleteproduct.component';
 import { DeleteproductcategoryComponent } from './admin/modify-entries/delete/deleteproductcategory/deleteproductcategory.component';
 import { DeleteuserComponent } from './admin/modify-entries/delete/deleteuser/deleteuser.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './signup/signup.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -35,9 +38,11 @@ import { DeleteuserComponent } from './admin/modify-entries/delete/deleteuser/de
     DeleteproductComponent,
     DeleteproductcategoryComponent,
     DeleteuserComponent,
-  
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
+    MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
@@ -46,6 +51,8 @@ import { DeleteuserComponent } from './admin/modify-entries/delete/deleteuser/de
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
       {path: 'admin/management', component: ManagpageComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'signup', component: SignUpComponent},
     ]),
     BrowserAnimationsModule,
   ],
