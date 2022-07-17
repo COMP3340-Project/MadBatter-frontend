@@ -22,6 +22,7 @@ import { DeleteuserComponent } from './admin/modify-entries/delete/deleteuser/de
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './signup/signup.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     DeleteproductcategoryComponent,
     DeleteuserComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    ProductPageComponent
   ],
   imports: [
     MatFormFieldModule,
