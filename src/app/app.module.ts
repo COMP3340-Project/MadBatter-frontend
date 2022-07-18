@@ -23,6 +23,12 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './signup/signup.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatIconModule } from "@angular/material/icon";
+import { MatInputModule } from "@angular/material/input";
+import { MatListModule } from "@angular/material/list";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -45,6 +51,12 @@ import { ProductPageComponent } from './product-page/product-page.component';
   ],
   imports: [
     MatFormFieldModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,

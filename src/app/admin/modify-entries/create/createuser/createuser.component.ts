@@ -47,7 +47,7 @@ export class CreateuserComponent implements OnInit {
   save(){
     
     
-    // Sending POST request throught Admin Service 
+    // Sending POST request through Admin Service 
     if(this.f.username.valid &&  this.f.useremail.valid &&  this.f.userpswd.valid &&  this.f.userphone.valid &&  this.f.useradd.valid )
 
       this.adminservice.createUser(this.f.username.value, this.f.useremail.value, this.f.userpswd.value,  this.f.userphone.value,  this.f.useradd.value)
