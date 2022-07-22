@@ -13,8 +13,9 @@
     <title>Product Page</title>
 </head>
 <body>
+    <app-navbar></app-navbar>
     <div id="product-container">
-        <p id="path">product category->product name</p>
+        <p id="path">product category->{{productdetails[0].product_name}}</p>
         <br>
         <div id="left">
             <div id="big-image" class="center">
@@ -28,9 +29,9 @@
             </div>
         </div>
         <div id="right">
-            <h2 id="product-name">Product Name</h2>
+            <h2 id="product-name">{{productdetails[0].product_name}}</h2>
             <br>
-            <p id="price">$99.99</p>
+            <p id="price">${{productdetails[0].product_price}}</p>
             <p id="quantity-title">QUANTITY:</p>
             <form id="product-order">
                 <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="No.">
@@ -39,7 +40,7 @@
             <p id="shipping-options-title">SHIPPING OPTIONS:</p>
             <p id="shipping-options-des">ONLY ONLINE ORDERS<br>PICK UP IN STORE</p>
             <p id="description-title">DESCRIPTION:</p>
-            <p id="description-content">Description of porduct</p>
+            <p id="description-content">{{productdetails[0].product_description}}</p>
             <p id="allergens-title">ALLERGENS:</p>
             <p id="allergens-des">May contain nuts, eggs, milk etc</p>
         </div>

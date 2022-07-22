@@ -10,6 +10,9 @@ export class Adminservice {
   allproducts : string[] = [];
   allproductcategory : string[] = [];
   allusers : string[] = [];
+
+  productdetailslist: string[] = [];
+
   errorMessage: any;
   
 
@@ -43,12 +46,13 @@ export class Adminservice {
     return this.allproducts;
   }
 
-  createProducts(product_name:string,product_description:string,category_id:string){
+  createProducts(product_name:string,product_description:string,category_id:string,product_price:string){
     
     const postData = {
       product_name: product_name,
       product_description: product_description,
-      category_id:parseInt(category_id)
+      category_id:parseInt(category_id),
+      product_price:parseInt(product_price)
   };
 
   return this.http.post<any>(`${environment.apiUrl}/api/v1/products/add`, postData)
@@ -148,6 +152,29 @@ return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postD
   return this.http.post<any>(`${environment.apiUrl}/api/v1/users/delete`, postData)
 
   }
+
+
+
+  productdetails(product_id: number,category_id: number){
+    
+    this.productdetailslist.length = 0;
+    this.http.get<any>(`${environment.apiUrl}/api/v1/products/details`, {
+      params: {
+        product_id: `${product_id}`,
+        category_id: `${category_id}`
+      }}).subscribe({
+        next: data => {
+          for(let key in data)
+                if(data.hasOwnProperty(key))
+                    this.productdetailslist.push(data[key]);
+      
+           // this.allproducts = data;
+        }}),
+        
+
+    console.log(this.productdetailslist)
+    return this.productdetailslist;
+}
 
 
 }

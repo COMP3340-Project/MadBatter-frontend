@@ -67,6 +67,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
       {path: 'admin/management', component: ManagpageComponent},
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
+      {path: 'product', component: ProductPageComponent}
     ]),
     BrowserAnimationsModule,
   ],

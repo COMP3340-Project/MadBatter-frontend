@@ -25,7 +25,8 @@ export class CreateproductComponent implements OnInit {
     this.Form = this.formBuilder.group({
       productname: ['',Validators.required],
       productdesc: ['',Validators.required],
-      categoryname: ['', Validators.required]
+      categoryname: ['', Validators.required],
+      productprice: ['', Validators.required]
     });
 
     this.productcatlist = this.adminservice.productcategory()
@@ -63,7 +64,7 @@ export class CreateproductComponent implements OnInit {
     // Sending POST request throught Admin Service 
     if(this.f.productname.valid   )
 
-      this.adminservice.createProducts(this.f.productname.value , this.f.productdesc.value , this.productcatlist[index].category_id)
+      this.adminservice.createProducts(this.f.productname.value , this.f.productdesc.value , this.productcatlist[index].category_id,this.f.productprice.value )
       .subscribe({
         next: () => {
           this.dialogRef.close();
