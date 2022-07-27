@@ -29,6 +29,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     DeleteuserComponent,
     LoginComponent,
     SignUpComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    CategoryComponent
   ],
   imports: [
     MatFormFieldModule,
