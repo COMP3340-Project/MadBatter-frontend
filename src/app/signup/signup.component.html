@@ -1,0 +1,53 @@
+<form [formGroup]="signupForm">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+    <mat-form-field>
+      <mat-label>   Name</mat-label>
+      <input matInput placeholder="Ex. Jon" formControlName="username" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Ex. Jon" formControlName="useremail" />
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="419 Mountainberry rd" formControlName="useradd" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="467-695-5756" formControlName="userphone" />
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Ex. Jon"
+        formControlName="userpswd"
+      />
+    </mat-form-field>
+    <div class="clearfix">
+        
+        <button
+      color="accent"
+      [disabled]="!signupForm.valid"
+      mat-raised-button
+      type="submit"
+      (click)="signup()"
+    >
+      <span>Sign up</span>
+    </button>
+    <button
+      color="accent"
+      mat-raised-button
+      type="button"
+      (click)="cancel()"
+    >
+      <span>Cancel</span>
+    </button>
+</div>
+    </div>
+  </form>

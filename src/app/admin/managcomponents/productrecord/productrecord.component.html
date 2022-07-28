@@ -1,0 +1,48 @@
+<div >
+    <div class="componentheader">
+        <div class="subheadingtext">
+            <h1 class="subheading">Product Records</h1>
+        </div>
+        <div class="subheadingbutton">
+            <button class="dropdownselection" mat-button (click)="openadd()">Add</button>
+            <button class="dropdownselection" mat-button (click)="opendelete()">
+                Delete
+              </button>
+            <button class="dropdownselection" mat-button (click)="refresh()">Refresh</button>
+        </div>
+    </div>
+    <div class="table">
+    
+        <h1 *ngIf="prods.length < 1" class="loading">loading ...</h1>
+    
+        <table *ngIf="prods.length > 1" datatable class="row-border hover">
+        <thead>
+        <tr >
+            <th style="padding-left: 0.7vw ;"   class="tablequantity">Product Name</th>
+            <th  class="tablematerial">Product Description</th>
+            <th  class="tablequantity">Category Name</th>
+        </tr>
+        <tr >
+            <th  style="padding-left: 0.7vw ;" class="tablequantity"><hr></th>
+            <th  class="tablematerial"><hr></th>
+            <th  class="tablequantity"><hr></th>
+        </tr>
+       
+        </thead>
+
+    <tbody >
+    
+            <!--<tr *ngFor="let mat of mats">
+                <td class="tablematerial">{{mat.MaterialId}}</td>
+                <td class="tablequantity">{{mat.MaterialName}}</td>
+            </tr>-->   
+    
+        <tr  *ngFor="let prod of prods">
+            <td style="padding-left: 0.7vw ;" class="tablequantity">{{prod.product_name}}</td>
+            <td class="tablematerial">{{prod.product_description}}</td>
+            <td class="tablequantity">{{prod.category_name}}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

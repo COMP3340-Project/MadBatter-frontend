@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="product-page.component.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind:wght@500&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Product Page</title>
+</head>
+<body>
+    <app-navbar></app-navbar>
+    <div id="product-container">
+        <p id="path">product category->{{productdetails[0].product_name}}</p>
+        <br>
+        <div id="left">
+            <div id="big-image" class="center">
+                <img id="main-img" src="../../assets/CakePlaceholder.jpg" alt="product image 1">
+            </div>
+            <div id="other-imgs" class="center">
+                <img class="small-img" src="../../assets/CakePlaceholder.jpg" alt="product image 2">
+                <img class="small-img" src="../../assets/CakePlaceholder.jpg" alt="product image 3">
+                <img class="small-img" src="../../assets/CakePlaceholder.jpg" alt="product image 4">
+                
+            </div>
+        </div>
+        <div id="right">
+            <h2 id="product-name">{{productdetails[0].product_name}}</h2>
+            <br>
+            <p id="price">${{productdetails[0].product_price}}</p>
+            <p id="quantity-title">QUANTITY:</p>
+            <form id="product-order">
+                <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="No.">
+                <input type="submit" id="add-to-cart-btn" name="add-to-cart" value="Add to Cart">
+            </form>
+            <p id="shipping-options-title">SHIPPING OPTIONS:</p>
+            <p id="shipping-options-des">ONLY ONLINE ORDERS<br>PICK UP IN STORE</p>
+            <p id="description-title">DESCRIPTION:</p>
+            <p id="description-content">{{productdetails[0].product_description}}</p>
+            <p id="allergens-title">ALLERGENS:</p>
+            <p id="allergens-des">May contain nuts, eggs, milk etc</p>
+        </div>
+    </div>
+    <br>
+</body>

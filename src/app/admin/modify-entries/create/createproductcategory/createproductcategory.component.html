@@ -1,0 +1,18 @@
+<div class="body">
+    <h1 mat-dialog-title class="heading">Add Material Type Record</h1>
+    
+    <form [formGroup]="Form">
+
+
+            <h2 class="subheading">Enter category Name :</h2>
+                <input matInput
+                       formControlName="categoryname"
+                       class="input">
+            
+    </form>
+    
+    <mat-dialog-actions>
+        <button class="mat-raised-button btn"(click)="close()" >Close</button>
+        <button class="mat-raised-button mat-primary btn"(click)="save()" >Save</button>
+    </mat-dialog-actions>
+    </div>
