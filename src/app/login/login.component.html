@@ -1,1 +1,42 @@
-<p>login works!</p>
+<form [formGroup]="Form">
+    <div class="container">
+
+        <h1>Login</h1>
+        <p>Please fill in your email and password.</p>
+        <hr>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Ex. Jon" formControlName="useremail" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Ex. Jon"
+        formControlName="userpswd"
+      />
+    </mat-form-field>
+    <div class="clearfix">
+        
+        <button
+      color="accent"
+      [disabled]="!Form.valid"
+      mat-raised-button
+      type="submit"
+      (click)="login()"
+    >
+      <span>Login</span>
+    </button>
+    <button
+      color="accent"
+      mat-raised-button
+      type="button"
+      (click)="cancel()"
+    >
+      <span>Cancel</span>
+    </button>
+</div>
+    </div>
+  </form>

@@ -10,6 +10,7 @@ export class Adminservice {
   allproducts : string[] = [];
   allproductcategory : string[] = [];
   allusers : string[] = [];
+  allusers1 : string[] = [];
 
   productdetailslist: string[] = [];
 
@@ -21,8 +22,6 @@ export class Adminservice {
   
       ) {
   }
-
-
 
   products(){
     
@@ -153,7 +152,26 @@ return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postD
 
   }
 
+  find(user_email: string,user_password: string){
 
+    this.allusers1.length = 0;
+    this.http.get<any>(`${environment.apiUrl}/api/v1/users/find`, {
+      params: {
+        user_email: `${user_email}`,
+        user_password: `${user_password}`
+      }}).subscribe({
+        next: data => {
+          for(let key in data)
+                if(data.hasOwnProperty(key))
+                    this.allusers1.push(data[key]);
+      
+           // this.allproducts = data;
+        }}),
+        
+
+    console.log(this.allusers1)
+    return this.allusers1;
+}
 
   productdetails(product_id: number,category_id: number){
     

@@ -14,8 +14,8 @@ import Swal from 'sweetalert2';
 export class SignUpComponent implements OnInit {
   dialogRef: any;
   constructor(
-    private adminservice : Adminservice, 
-    private router: Router) {}
+    private adminservice: Adminservice,
+    private router: Router) { }
 
   signupForm!: FormGroup;
 
@@ -48,36 +48,35 @@ export class SignUpComponent implements OnInit {
       toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
   })
-  
 
-  signup(){
-      
+
+  signup() {
+
     // Sending POST request through Admin Service 
-    if(this.f.username.valid &&  this.f.useremail.valid &&  this.f.userpswd.valid &&  this.f.userphone.valid &&  this.f.useradd.valid )
-{
-      this.adminservice.createUser(this.f.username.value, this.f.useremail.value, this.f.userpswd.value,  this.f.userphone.value,  this.f.useradd.value)
-      .subscribe({
-        next: () => {
-          this.Toast.fire({
-            icon: 'success',
-            title: ' Account created !!'
-          });
-      
-        }
-    });
-  }
-      this.Toast.fire({
-        icon: 'error',
-        title: 'UnSuccessful :('
-      })
+    if (this.f.username.valid && this.f.useremail.valid && this.f.userpswd.valid && this.f.userphone.valid && this.f.useradd.valid) {
+      this.adminservice.createUser(this.f.username.value, this.f.useremail.value, this.f.userpswd.value, this.f.userphone.value, this.f.useradd.value)
+        .subscribe({
+          next: () => {
+            this.Toast.fire({
+              icon: 'success',
+              title: ' Account created !!'
+            });
+
+          }
+        });
+    }
+    this.Toast.fire({
+      icon: 'error',
+      title: 'UnSuccessful :('
+    })
 
   }
 
-  cancel(){
+  cancel() {
     this.signupForm.reset();
     this.router.navigate([""]);
-    
+
   }
-  
+
 
 }

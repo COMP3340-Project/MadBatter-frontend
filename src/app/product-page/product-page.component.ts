@@ -28,12 +28,13 @@ export class ProductPageComponent implements OnInit {
       this.catid = params.catid
     });
 
-  this.productdetails = this.adminservice.productdetails(this.id,this.catid)
+    this.productdetails = this.adminservice.productdetails(this.id,this.catid)
 
     console.log(this.productdetails)
 
 
   }
+
 
 
 
