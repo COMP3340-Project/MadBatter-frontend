@@ -60,6 +60,11 @@ export class LoginComponent implements OnInit {
 
     console.log(this.find)
 
+    if(this.find.permission == "admin"){
+      console.log("admin")
+    }
+
+
   }
 
   cancel() {
