@@ -1,0 +1,40 @@
+body
+{
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+h2
+{
+    font-size: 35px;
+    text-align: center;
+}
+
+hr
+{
+    border: 0.5px solid black;
+}
+
+#container
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#writing
+{
+    font-size: 29px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    padding: 15px;
+}
+
+.inside
+{
+    border: 0.5px solid black;
+    padding: 15px;
+    background-color: white;
+}
+

@@ -1,0 +1,79 @@
+body
+{
+    margin: 0 auto;
+    background-color: antiquewhite;
+    font-family: "Bodoni MT", sans-serif;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 35px;
+}
+
+#writing
+{
+    font-size: 31px;
+}
+
+#container
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#buttonContainer
+{
+
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 50px;
+    text-align: center;
+    font-family: "Bodoni MT", sans-serif;
+
+}
+
+.button {
+    background-color: cadetblue;
+    color: white;
+    padding: 15px;
+    font-size: medium;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    font-family: "Bodoni MT", sans-serif;
+    font-size: 29px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.answer {
+    display: none;
+    position: absolute;
+    background-color: lightsteelblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px cadetblue;
+    z-index: 1;
+    font-size: 29px;
+}
+
+.answer p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .answer
+{
+    display: block;
+}
