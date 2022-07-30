@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
+  productdetails:any=  [];
   constructor() { }
 
   ngOnInit(): void {
