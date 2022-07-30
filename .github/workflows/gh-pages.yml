@@ -32,4 +32,4 @@ jobs:
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/MadBatter-frontend s3://madbatter
+        run: aws s3 sync ./dist/madbatter-frontend s3://madbatter
