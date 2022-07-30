@@ -30,6 +30,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CategoryComponent } from './category/category.component';
     LoginComponent,
     SignUpComponent,
     ProductPageComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProductCardComponent
   ],
   imports: [
     MatFormFieldModule,
