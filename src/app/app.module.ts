@@ -71,7 +71,9 @@ import { ProductCardComponent } from './product-card/product-card.component';
       {path: 'admin/management', component: ManagpageComponent},
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
-      {path: 'product', component: ProductPageComponent}
+      {path: 'product', component: ProductPageComponent},
+      {path:'not-found',component:HomepageComponent},  
+      {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,
   ],
