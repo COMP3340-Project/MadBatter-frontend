@@ -71,7 +71,8 @@ import { CategoryComponent } from './category/category.component';
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
       {path: 'product', component: ProductPageComponent},
-      {path:'not-found',component:HomepageComponent},  
+      {path:'not-found',component:HomepageComponent},
+      {path: 'category',component:CategoryComponent},  
       {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,
