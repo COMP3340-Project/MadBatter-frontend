@@ -6,6 +6,8 @@ import { Adminservice } from 'src/app/services/admin.service';
 import { Router } from "@angular/router";
 import Swal from 'sweetalert2';
 import { find } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -18,12 +20,13 @@ export class LoginComponent implements OnInit {
   constructor(
     private adminservice: Adminservice,
     private router: Router,
-    private formBuilder: FormBuilder,) { }
+    private formBuilder: FormBuilder,
+    private http: HttpClient, ) { }
 
     user_email!: string;
     user_password!: string;
 
-  find:any 
+  
 
   Form!: FormGroup;
 
@@ -54,20 +57,34 @@ export class LoginComponent implements OnInit {
     }
   })
 
-
-  test:string = ''
+  find:any = []
+  value:string = ''
 
   login() {
-    this.find = this.adminservice.find(this.f.useremail.value ,this.f.userpswd.value)
 
-    console.log(this.find)
+    this.http.get<any>(`${environment.apiUrl}/api/v1/users/find`, {
+      params: {
+        user_email: `${this.f.useremail.value}`,
+        user_password: `${this.f.userpswd.value}`
+      }}).subscribe((data: any) => {
+        console.log(data[0].permission);
+        if(data[0].permission == 'admin'){
+          this.router.navigate(["admin/management"]);
+        }if(data[0].permission == 'user'){
+          this.router.navigate(["/"]);
 
+          // Add Window.localstorage
 
-    if(this.find == 'admin'){
-      console.log("test")
-    }
+          
 
+        }
+    });
+
+  
   }
+
+
+
 
   cancel() {
     this.Form.reset();

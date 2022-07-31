@@ -152,28 +152,19 @@ return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postD
 
   }
 
-  value:any = ''; 
-  test:string[] = []; 
+  value:string = ''; 
+  test:Array<String> = []; 
 
-  find(user_email: string,user_password: string){
-   
-    this.allusers1.length = 0;
+  async find(user_email: string,user_password: string){
     this.http.get<any>(`${environment.apiUrl}/api/v1/users/find`, {
       params: {
         user_email: `${user_email}`,
         user_password: `${user_password}`
-      }}).subscribe(data => {
-       this.value = data[0]
-       //console.log(data[0].permission)
-        //console.log(this.value.permission)        
-
-        this.test.push(this.value.permission)
-        
-
-        console.log(this.test)
-      })
-
-      return this.test
+      }}).subscribe((data: any) => {
+        console.log(data[0].permission);
+        this.value =data[0].permission;
+    });
+     return this.value
 }
 
   productdetails(product_id: number,category_id: number){
