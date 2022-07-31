@@ -70,14 +70,29 @@ export class LoginComponent implements OnInit {
         console.log(data[0].permission);
         if(data[0].permission == 'admin'){
           this.router.navigate(["admin/management"]);
+
+          this.Toast.fire({
+            icon: 'success',
+            title: 'Successful Login 😁!'
+          });
+
+
         }if(data[0].permission == 'user'){
           this.router.navigate(["/"]);
 
           // Add Window.localstorage
+          this.Toast.fire({
+            icon: 'success',
+            title: 'Successful Login 😁!'
+          });
 
-          
 
         }
+
+        this.Toast.fire({
+          icon: 'error',
+          title: 'UnSuccessful :('
+        });
     });
 
   
