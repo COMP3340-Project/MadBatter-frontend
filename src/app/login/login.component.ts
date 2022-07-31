@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
@@ -6,6 +5,7 @@ import { Adminservice } from 'src/app/services/admin.service';
 
 import { Router } from "@angular/router";
 import Swal from 'sweetalert2';
+import { find } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     user_email!: string;
     user_password!: string;
 
-  find:any = []
+  find:any 
 
   Form!: FormGroup;
 
@@ -55,15 +55,17 @@ export class LoginComponent implements OnInit {
   })
 
 
+  test:string = ''
+
   login() {
     this.find = this.adminservice.find(this.f.useremail.value ,this.f.userpswd.value)
 
     console.log(this.find)
 
-    if(this.find.permission == "admin"){
-      console.log("admin")
-    }
 
+    if(this.find == 'admin'){
+      console.log("test")
+    }
 
   }
 
