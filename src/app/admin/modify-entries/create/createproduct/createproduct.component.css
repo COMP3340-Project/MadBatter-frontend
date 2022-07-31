@@ -1,0 +1,29 @@
+.body{
+    width:28vw;
+    height: 65vh;
+    border-radius: 15%;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.subheading{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.input{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn{
+    text-align: center !important;
+    width:5.5vw;
+    height: 4.5vh;
+    margin-right: 2vw;
+}

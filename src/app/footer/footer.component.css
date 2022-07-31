@@ -2,8 +2,8 @@
     background-color:#e3f2fd;
     height: 40vh;
     width: auto;
-    margin-bottom: 1.5vh;
-    margin-top: 100vw;
+   /*  margin-bottom: 1.5vh; */
+   /*  margin-top: 100vw; */
     flex-direction: row;
     display: flex;
 }

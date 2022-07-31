@@ -1,0 +1,37 @@
+<div class="componentheader">
+    <div class="subheadingtext">
+        <h1 class="subheading">Prdt Catg Records</h1>
+    </div>
+    <div class="subheadingbutton">
+        <button class="dropdownselection" mat-button (click)="openadd()" >Add</button>
+        <button class="dropdownselection" mat-button (click)="opendelete()">
+            Delete
+          </button>
+        <button class="dropdownselection" mat-button (click)="refresh()" >Refresh</button>
+    </div>
+</div>
+<div class="table">
+
+    <h1 *ngIf="catgs.length < 1" class="loading">loading ...</h1>
+
+    <table *ngIf="catgs.length > 1" datatable class="row-border hover">
+    <thead>
+    <tr>
+        <th  class="tablematid">Category Id</th>
+        <th class="tableid">Category Name</th>
+       
+    </tr>
+    <tr>
+        <th  class="tablematid"><hr></th>
+        <th class="tableid"><hr></th>
+       
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let catg of catgs">
+        <td class="tablematid">{{catg.category_id}}</td>
+        <td class="tableid">{{catg.category_name}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>

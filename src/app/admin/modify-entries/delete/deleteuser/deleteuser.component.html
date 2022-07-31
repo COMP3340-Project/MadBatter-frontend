@@ -1,0 +1,22 @@
+<div class="body">
+    <h1 mat-dialog-title class="heading">Delete Material Record</h1>
+    
+    <form [formGroup]="Form">
+            <h2 class="subheading">Enter user Name :</h2>
+                <input matInput
+                       formControlName="username"
+                       class="input"
+                       placeholder="User Name">
+
+            <h2 class="subheading">Enter user Email :</h2>
+                <input matInput
+                        formControlName="useremail"
+                        class="input"
+                        placeholder="User Email">
+    </form>
+    
+    <mat-dialog-actions>
+        <button class="mat-raised-button btn"(click)="close()" >Close</button>
+        <button class="mat-raised-button mat-primary btn"(click)="save()" >Save</button>
+    </mat-dialog-actions>
+</div>
