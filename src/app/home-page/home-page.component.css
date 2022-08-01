@@ -1,14 +1,14 @@
 body
 {
     margin: 0;
-    background-color: antiquewhite;
-    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg");
+    background-color: #e3f2fd;
+   /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg"); */
     object-fit: cover;
 }
 /*content Container */
 #container
 {
-    background-color: lightsalmon;
+    background-color: white;
     margin-right: 15%;
     margin-left: 15%;
 }

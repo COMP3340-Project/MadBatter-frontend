@@ -1,6 +1,7 @@
 .container{
-height:40vh;
+height:auto;
 }
+
 nav{
     display: flex;
     align-items: center;
