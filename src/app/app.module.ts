@@ -31,6 +31,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +70,10 @@ import { CategoryComponent } from './category/category.component';
       {path: 'admin/management', component: ManagpageComponent},
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
-      {path: 'product', component: ProductPageComponent}
+      {path: 'product', component: ProductPageComponent},
+      {path:'not-found',component:HomepageComponent},
+      {path: 'category',component:CategoryComponent},  
+      {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,
   ],

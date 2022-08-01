@@ -152,25 +152,19 @@ return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postD
 
   }
 
-  find(user_email: string,user_password: string){
+  value:string = ''; 
+  test:Array<String> = []; 
 
-    this.allusers1.length = 0;
+  async find(user_email: string,user_password: string){
     this.http.get<any>(`${environment.apiUrl}/api/v1/users/find`, {
       params: {
         user_email: `${user_email}`,
         user_password: `${user_password}`
-      }}).subscribe({
-        next: data => {
-          for(let key in data)
-                if(data.hasOwnProperty(key))
-                    this.allusers1.push(data[key]);
-      
-           // this.allproducts = data;
-        }}),
-        
-
-    console.log(this.allusers1)
-    return this.allusers1;
+      }}).subscribe((data: any) => {
+        console.log(data[0].permission);
+        this.value =data[0].permission;
+    });
+     return this.value
 }
 
   productdetails(product_id: number,category_id: number){

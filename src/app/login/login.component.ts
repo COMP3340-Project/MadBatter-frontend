@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
@@ -6,6 +5,9 @@ import { Adminservice } from 'src/app/services/admin.service';
 
 import { Router } from "@angular/router";
 import Swal from 'sweetalert2';
+import { find } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -18,12 +20,13 @@ export class LoginComponent implements OnInit {
   constructor(
     private adminservice: Adminservice,
     private router: Router,
-    private formBuilder: FormBuilder,) { }
+    private formBuilder: FormBuilder,
+    private http: HttpClient, ) { }
 
     user_email!: string;
     user_password!: string;
 
-  find:any = []
+  
 
   Form!: FormGroup;
 
@@ -54,18 +57,49 @@ export class LoginComponent implements OnInit {
     }
   })
 
+  find:any = []
+  value:string = ''
 
   login() {
-    this.find = this.adminservice.find(this.f.useremail.value ,this.f.userpswd.value)
 
-    console.log(this.find)
+    this.http.get<any>(`${environment.apiUrl}/api/v1/users/find`, {
+      params: {
+        user_email: `${this.f.useremail.value}`,
+        user_password: `${this.f.userpswd.value}`
+      }}).subscribe((data: any) => {
+        console.log(data[0].permission);
+        if(data[0].permission == 'admin'){
+          this.router.navigate(["admin/management"]);
 
-    if(this.find.permission == "admin"){
-      console.log("admin")
-    }
+          this.Toast.fire({
+            icon: 'success',
+            title: 'Successful Login 😁!'
+          });
 
 
+        }if(data[0].permission == 'user'){
+          this.router.navigate(["/"]);
+
+          // Add Window.localstorage
+          this.Toast.fire({
+            icon: 'success',
+            title: 'Successful Login 😁!'
+          });
+
+
+        }
+
+        this.Toast.fire({
+          icon: 'error',
+          title: 'UnSuccessful :('
+        });
+    });
+
+  
   }
+
+
+
 
   cancel() {
     this.Form.reset();
