@@ -33,7 +33,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
-import { ProductCardComponent } from './product-card/product-card.component';
+import { MycartComponent } from './mycart/mycart.component';
+
 
 @NgModule({
   declarations: [
@@ -57,7 +58,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
     SignUpComponent,
     ProductPageComponent,
     CategoryComponent,
-    ProductCardComponent
+    MycartComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -78,7 +79,8 @@ import { ProductCardComponent } from './product-card/product-card.component';
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
       {path: 'product', component: ProductPageComponent},
-      {path:'not-found',component:HomepageComponent},  
+      {path:'not-found',component:HomepageComponent},
+      {path: 'category',component:CategoryComponent},  
       {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,

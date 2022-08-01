@@ -1,0 +1,30 @@
+body
+{
+    margin: 0 auto;
+    font-family: "Bodoni MT", sans-serif;
+    background-color: lightgrey;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+#container
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#disclaimer
+{
+    background-color: white;
+}
+
+.writing
+{
+    font-size: 29px;
+    padding: 15px;
+    text-align: center;
+}

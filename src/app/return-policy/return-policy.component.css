@@ -1,0 +1,99 @@
+body
+{
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    font-family: "Bodoni MT", serif;
+
+}
+
+h2
+{
+    font-variant-caps: small-caps;
+}
+
+#container
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#stepContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+
+#stepOne
+{
+    border: 0.5px solid black;
+    padding: 25px;
+    margin-left: 25px;
+}
+
+#stepTwo
+{
+    border: 0.5px solid black;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+#secondStepContainer
+{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+#stepThree
+{
+    grid-column:2/3 ;
+    grid-row: 2/3;
+    border: 0.5px solid black;
+    padding: 25px;
+}
+
+h2
+{
+    font-size: 35px;
+}
+
+#inputBox
+{
+    text-align: center;
+    font-size: 29px;
+}
+
+#inputBox textarea
+{
+    text-align: left;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    font-family: "Bodoni MT", serif;
+}
+
+#inputBox input
+{
+    border-radius: 15px;
+    border: 0.5px solid black;
+    height: 28px;
+    font-family: "Bodoni MT", serif;
+}
+
+#inputBox button
+{
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Bodoni MT", serif;
+    border-radius: 15px;
+    border: 0.5px solid black;
+
+}
