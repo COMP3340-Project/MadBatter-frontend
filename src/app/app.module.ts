@@ -33,7 +33,6 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
-import { MycartComponent } from './mycart/mycart.component';
 
 
 @NgModule({
@@ -58,7 +57,6 @@ import { MycartComponent } from './mycart/mycart.component';
     SignUpComponent,
     ProductPageComponent,
     CategoryComponent,
-    MycartComponent
   ],
   imports: [
     MatFormFieldModule,
