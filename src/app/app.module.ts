@@ -33,7 +33,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
-
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   declarations: [
@@ -57,6 +57,7 @@ import { CategoryComponent } from './category/category.component';
     SignUpComponent,
     ProductPageComponent,
     CategoryComponent,
+    HomeComponent
   ],
   imports: [
     MatFormFieldModule,
