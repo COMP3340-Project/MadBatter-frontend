@@ -2,21 +2,20 @@ body
 {
     margin: 0;
     background-color: #e3f2fd;
-    <<<<<<< HEAD
+   /* <<<<<<< HEAD
         /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg"); */
-    =======
+    /*=======*/
     font-family: "Poppins", sans-serif;
->>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b
+/*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
 object-fit: cover;
 }
 /*content Container */
 #container
 {
     background-color: white;
-    <<<<<<< HEAD
-    =======
+  /*  <<<<<<< HEAD =======*/
     border: 0.5px solid black;
->>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b
+/*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
 margin-right: 15%;
     margin-left: 15%;
 }
