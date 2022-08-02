@@ -1,14 +1,22 @@
 body
 {
     margin: 0;
-    background-color: antiquewhite;
-    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg");
+    background-color: #e3f2fd;
+<<<<<<< HEAD
+   /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg"); */
+=======
+    font-family: "Poppins", sans-serif;
+>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b
     object-fit: cover;
 }
 /*content Container */
 #container
 {
-    background-color: lightsalmon;
+    background-color: white;
+<<<<<<< HEAD
+=======
+    border: 0.5px solid black;
+>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b
     margin-right: 15%;
     margin-left: 15%;
 }
@@ -19,6 +27,7 @@ body
     max-width: 100%;
     position: relative;
     display: block;
+    padding: 15px;
 }
 
 .slide
@@ -29,6 +38,7 @@ body
     height: 250px;
     object-fit: cover;
     object-position: center;
+    border: 0.5px solid black;
 }
 
 /*product category grid*/
@@ -82,15 +92,19 @@ body
 .productOverlay
  {
     border: solid 0.5px black;
-    background-color: antiquewhite;
+    background-color: lightsteelblue;
     text-align: left;
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
  }
 
 .productOverlay button
 {
     margin-right: 5px;
     margin-left: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 .productOverlay span
@@ -131,20 +145,12 @@ body
 /*Contact Us image*/
 .contactusContainer
 {
-    /*position: relative;
-    background-color: antiquewhite;
-    margin: 25px;*/
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
 .contactusPhoto
 {
-    /*position: absolute;
-    z-index: 1;
-    width: 100%;
-    background-color: cadetblue;
-    border-radius: 5px;*/
     grid-column: 2/span 4;
     grid-row: 1/span 3;
 }
@@ -155,40 +161,27 @@ body
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
+    border: 0.5px solid black;
 }
 
 .contactusInfo
 {
-    /*position: absolute;
-    margin-top: 35%;
-    left:38%;
-    width: 45%;
-    height: 150px;
-    z-index: 2;
-    background-color: coral;
-    border-radius: 5px;
-    text-align: center;*/
     grid-column: 5/span 4;
     grid-row: 3/span 2;
-    background-color: antiquewhite;
+    background-color: lightsteelblue;
+    padding: 15px;
+    border: 0.5px solid black;
     text-align: center;
 }
 
 .aboutUsContainer
 {
-    /*position: relative;*/
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
 .aboutUsImage
 {
-    /*position:absolute;
-    right: 0;
-    margin-top: 30%;
-    float: right;
-    z-index: 1;
-    width: 100%;*/
     grid-column: 6/span 4;
     grid-row: 1/span 3;
 }
@@ -199,26 +192,17 @@ body
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-
+    border: 0.5px solid black;
 }
 
 .aboutUsInfo
 {
-    /*
-    position: absolute;
-    margin-top: 80%;
-    right:38%;
-    width: 45%;
-    height: 150px;
-    z-index: 2;
-    background-color: coral;
-    border-radius: 5px;
-    text-align: center;
-     */
     grid-column: 3/span 4;
     grid-row: 3/span 2;
-    background-color: antiquewhite;
+    background-color: lightsteelblue;
     text-align: center;
+    padding: 15px;
+    border: 0.5px solid black;
 }
 
 

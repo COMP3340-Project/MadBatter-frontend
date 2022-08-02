@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
+import { FooterComponent } from './footer/footer.component';
+
 import { ManagpageComponent } from '../app/admin/managpage/managpage.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProductrecordComponent } from './admin/managcomponents/productrecord/productrecord.component';
@@ -36,6 +39,9 @@ import { CategoryComponent } from './category/category.component';
   declarations: [
     AppComponent,
     NavbarComponent,
+
+    FooterComponent,
+
     ManagpageComponent,
     HomepageComponent,
     ProductrecordComponent,
@@ -50,7 +56,7 @@ import { CategoryComponent } from './category/category.component';
     LoginComponent,
     SignUpComponent,
     ProductPageComponent,
-    CategoryComponent
+    CategoryComponent,
   ],
   imports: [
     MatFormFieldModule,
