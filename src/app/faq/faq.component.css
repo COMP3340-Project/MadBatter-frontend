@@ -1,7 +1,6 @@
 body
 {
     margin: 0 auto;
-    background-color: #e3f2fd;
     font-family: "Poppins", sans-serif;
     text-align: center;
 }
@@ -20,6 +19,8 @@ h2
 {
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #e3f2fd;
+
 }
 
 #buttonContainer
@@ -34,7 +35,7 @@ h2
     row-gap: 50px;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    border: 0.5px solid black;
+    border: 5px solid #e3f2fd;
     column-gap: 25px;
 }
 
