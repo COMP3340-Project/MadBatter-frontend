@@ -2,7 +2,6 @@ body
 {
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
-    background-color: #e3f2fd;
 }
 
 h2
@@ -15,12 +14,14 @@ h2
 {
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #e3f2fd;
+
 }
 
 #disclaimer
 {
     background-color: white;
-    border: 0.5px solid black;
+    border: 5px solid #e3f2fd;
 }
 
 .writing
