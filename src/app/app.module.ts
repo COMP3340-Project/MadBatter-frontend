@@ -34,6 +34,15 @@ import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CategoryComponent } from './category/category.component';
 import { HomeComponent } from "./home/home.component";
+import {AboutUsPageComponent} from "./about-us-page/about-us-page.component";
+import {ContactUsPageComponent} from "./contact-us-page/contact-us-page.component";
+import {CareersComponent} from "./careers/careers.component";
+import {FAQComponent} from "./faq/faq.component";
+import {ForInvestorsComponent} from "./for-investors/for-investors.component";
+import {LegalDisclaimerComponent} from "./legal-disclaimer/legal-disclaimer.component";
+import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
+import {ReturnPolicyComponent} from "./return-policy/return-policy.component";
+import {SustainabilityComponent} from "./sustainability/sustainability.component";
 
 @NgModule({
   declarations: [
@@ -57,7 +66,16 @@ import { HomeComponent } from "./home/home.component";
     SignUpComponent,
     ProductPageComponent,
     CategoryComponent,
-    HomeComponent
+    HomeComponent,
+    AboutUsPageComponent,
+    CareersComponent,
+    ContactUsPageComponent,
+    FAQComponent,
+    ForInvestorsComponent,
+    LegalDisclaimerComponent,
+    PrivacyPolicyComponent,
+    ReturnPolicyComponent,
+    SustainabilityComponent,
   ],
   imports: [
     MatFormFieldModule,
@@ -79,7 +97,16 @@ import { HomeComponent } from "./home/home.component";
       {path: 'signup', component: SignUpComponent},
       {path: 'product', component: ProductPageComponent},
       {path:'not-found',component:HomepageComponent},
-      {path: 'category',component:CategoryComponent},  
+      {path: 'category',component:CategoryComponent},
+      {path : 'about-us', component:AboutUsPageComponent},
+        {path : 'contact-us', component:ContactUsPageComponent},
+        {path : 'careers', component:CareersComponent},
+        {path : 'faq', component:FAQComponent},
+        {path : 'for-investors', component:ForInvestorsComponent},
+        {path : 'legal-disclaimer', component:LegalDisclaimerComponent},
+        {path : 'privacy-policy', component:PrivacyPolicyComponent},
+        {path : 'return-policy', component:ReturnPolicyComponent},
+        {path : 'sustainability', component:SustainabilityComponent},
       {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,
