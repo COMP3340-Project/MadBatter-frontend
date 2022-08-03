@@ -1,6 +1,6 @@
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #e3f2fd;
+
     text-align: center;
     margin: 0 auto;
 }
@@ -9,6 +9,7 @@ body{
 {
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #e3f2fd;
 }
 
 .header{
