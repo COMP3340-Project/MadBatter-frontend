@@ -1,6 +1,5 @@
 body{
-    font-family: "Bodoni MT", serif;
-    background-color: blanchedalmond;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     margin: 0 auto;
 }
@@ -15,6 +14,7 @@ body{
 {
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #e3f2fd;
 }
 
 #workWithUs
