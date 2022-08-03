@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: #e3f2fd;
+
    /* <<<<<<< HEAD
         /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg"); */
     /*=======*/
@@ -12,9 +12,7 @@ object-fit: cover;
 /*content Container */
 #container
 {
-    background-color: white;
-  /*  <<<<<<< HEAD =======*/
-    border: 0.5px solid black;
+    background-color: #e3f2fd;  /*  <<<<<<< HEAD =======*/
 /*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
 margin-right: 15%;
     margin-left: 15%;
@@ -37,7 +35,6 @@ margin-right: 15%;
     height: 250px;
     object-fit: cover;
     object-position: center;
-    border: 0.5px solid black;
 }
 
 /*product category grid*/
@@ -60,27 +57,28 @@ margin-right: 15%;
 
 .productImageOne
 {
-    border: solid 0.5px black;
     grid-column: 1/2;
     grid-row: 1/1;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .productImageTwo
 {
-    border: solid 0.5px black;
     grid-column: 2/3;
     grid-row: 1/1;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border-radius: 5px 5px 5px 5px;
+
 }
 
 .productImageThree
 {
-    border: solid 0.5px black;
+    border-radius: 5px 5px 5px 5px;
     grid-column: 3/4;
     grid-row: 1/1;
     width: 100%;
@@ -90,7 +88,7 @@ margin-right: 15%;
 
 .productOverlay
 {
-    border: solid 0.5px black;
+    border-radius: 5px 5px 5px 5px;
     background-color: lightsteelblue;
     text-align: left;
     width: 100%;
@@ -123,7 +121,7 @@ margin-right: 15%;
 
 .productImageFour
 {
-    border: solid 0.5px black;
+    border-radius: 5px 5px 5px 5px;
     grid-column: 1/2;
     grid-row: 1/1;
     width: 100%;
@@ -133,7 +131,7 @@ margin-right: 15%;
 
 .productImageFive
 {
-    border: solid 0.5px black;
+    border-radius: 5px 5px 5px 5px;
     grid-column: 2/3;
     grid-row:1/1;
     width: 100%;
@@ -160,7 +158,7 @@ margin-right: 15%;
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    border: 0.5px solid black;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .contactusInfo
@@ -169,7 +167,7 @@ margin-right: 15%;
     grid-row: 3/span 2;
     background-color: lightsteelblue;
     padding: 15px;
-    border: 0.5px solid black;
+    border-radius: 5px 5px 5px 5px;
     text-align: center;
 }
 
@@ -191,7 +189,7 @@ margin-right: 15%;
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    border: 0.5px solid black;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .aboutUsInfo
@@ -201,5 +199,5 @@ margin-right: 15%;
     background-color: lightsteelblue;
     text-align: center;
     padding: 15px;
-    border: 0.5px solid black;
+    border-radius: 5px 5px 5px 5px;
 }
