@@ -21,6 +21,17 @@
   button{
       
   }
-  h1{
-    text-align: center;
+
+
+
+  .body{
+    display: flex;
+    height: auto;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    flex-direction: column;
+    margin-bottom: 0;
   }
+

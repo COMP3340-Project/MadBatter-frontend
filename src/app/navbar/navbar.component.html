@@ -28,10 +28,10 @@
         <nav style="background-color: #e3f2fd; height:1.5vh">
             <ul style="text-align: left;">
               
-                <li><a routerLink="/category">Cakes</a></li>
-                <li><a routerLink="/category">Brownies</a></li>
-                <li><a routerLink="/category">Muffins</a></li>
-                <li><a routerLink="/category">Pies</a></li>
+                <li  *ngFor="let catg of catgs">
+                  <a (click)="routecat(catg.category_id,catg.category_name)">{{catg.category_name}}</a>
+                </li>
+                
               </ul>
               <ul style="text-align: right;">
                 <li><a routerLink="/about-us">About Us</a></li>

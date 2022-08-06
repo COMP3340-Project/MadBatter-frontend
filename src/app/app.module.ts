@@ -44,6 +44,8 @@ import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component"
 import {ReturnPolicyComponent} from "./return-policy/return-policy.component";
 import {SustainabilityComponent} from "./sustainability/sustainability.component";
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,9 +78,11 @@ import {SustainabilityComponent} from "./sustainability/sustainability.component
     PrivacyPolicyComponent,
     ReturnPolicyComponent,
     SustainabilityComponent,
+
   ],
   imports: [
     MatFormFieldModule,
+    MatCardModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,

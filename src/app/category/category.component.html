@@ -1,16 +1,30 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-            <link rel="stylesheet" href="category.component.css">
-        </head>
-    <body>
-        <app-navbar></app-navbar>
-        <h1>Cat</h1>
-        <div id="table" class="cat-table">
-        </div>
-        <app-footer></app-footer>
-    </body>
-    
-</html>
+<app-navbar></app-navbar>
+<!-- <div id="table" class="cat-table"> -->
+        
+    <div class="body">
+        <h1 class="heading">{{catname}}</h1>
+
+        
+        <div style="width:90vw; margin-top: 5vh; display: flex; flex-direction:row;flex-wrap:  wrap; justify-content: center;" class="card-wrapper">
+
+            <mat-card *ngFor="let prod of prods" style="margin-right: 5vw; margin-bottom: 8vh;" class="example-card">
+              <img mat-card-image style="width: 18vw;" src="assets/cakes.jpeg" alt="Angular Logo">
+              <mat-card-header>
+                <mat-card-title>{{prod.product_name}}</mat-card-title>
+                <mat-card-subtitle>
+                    {{prod.product_description}}
+                </mat-card-subtitle>
+              </mat-card-header>
+          
+              <mat-card-actions>
+                <button mat-raised-button color="primary" (click)="routeprod(prod.product_id)">Order Now</button>
+              </mat-card-actions>
+            </mat-card>
+          
+          </div>
+
+    </div>
+
+<app-footer></app-footer>
+ 
+
