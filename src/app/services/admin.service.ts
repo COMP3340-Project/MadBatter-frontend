@@ -71,7 +71,7 @@ return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postD
 productsbycatid(category_id: number){
     
   this.productbycatlist.length = 0;
-  this.http.get<any>(`http://localhost:3000/api/v1/products/productsbycatid`, {
+  this.http.get<any>(`${environment.apiUrl}/api/v1/products/productsbycatid`, {
     params: {
       category_id: `${category_id}`
     }}).subscribe({
