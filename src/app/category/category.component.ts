@@ -20,18 +20,20 @@ export class CategoryComponent implements OnInit {
   catid: number=0;
   prods:any = []
   
-  ngOnInit(): void {
+  ngOnInit() {
     //gentable();
     this.activeroute.queryParams
     .subscribe(params => {
       this.catid = params.id,
       this.catname = params.catname
+      this.getprod()
     });
 
+  }
 
+  getprod(){
     this.prods.length = 0 
     this.prods = this.adminservice.productsbycatid(this.catid)
-
   }
 
   routeprod(id:number){
