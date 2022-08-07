@@ -1,37 +1,39 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 100%;
-    padding: 2%
-  }
-  
-  .container {
-    padding: 2%;
-  }
-  .cat-table{
-      margin-left:35%;
-      margin-right:35%;
-  }
-
-  td{
-      width: 33%;
-  }
-  img{
-      width: 100%;
-  }
-  button{
-      
-  }
-
-
-
-  .body{
-    display: flex;
-    height: auto;
-    width: 95vw;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2vw;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
+.body{
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.heading{
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 5vw;
+}
+.card-wrapper{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.example-card{
+  justify-content: center;
+  margin-bottom: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vh;
+  box-shadow: 5px 5px 5px #002a5b73;
+}
+button{
+  background-color: #8ed0ff;
+  border-radius: 5vw;
+  font-family: 'Courgette', cursive;
+  font-size: 1.5vw;
+}
+button:hover{
+  background-color: #002B5B;
+  color: white; 
+}
+mat-card-title, mat-card-subtitle{
+  font-family: 'Courgette', cursive;
+}

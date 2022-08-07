@@ -9,34 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind:wght@500&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    <!--font-family: 'BhuTuka Expanded One', cursive;font-family: 'Courgette', cursive;font-family: 'Shadows Into Light', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Courgette&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
   <app-navbar></app-navbar>
-  <!-- <div id="table" class="cat-table"> -->
-          
-      <div class="body">
-          <h1 class="heading">{{catname}}</h1>
+     
+  <div class="body">
+    <h1 class="heading">{{catname}}</h1>
+    <div class="card-wrapper">
+      <mat-card *ngFor="let prod of prods" class="example-card">
+        <img mat-card-image style="width: 18vw;" src="assets/cakes.jpeg" alt="Angular Logo">
+        <mat-card-header>
+          <mat-card-title>{{prod.product_name}}</mat-card-title>
+          <mat-card-subtitle>{{prod.product_description}}</mat-card-subtitle>
+        </mat-card-header>
 
-          
-          <div style="width:90vw; margin-top: 5vh; display: flex; flex-direction:row;flex-wrap:  wrap; justify-content: center;" class="card-wrapper">
-
-              <mat-card *ngFor="let prod of prods" style="margin-right: 5vw; margin-bottom: 8vh;" class="example-card">
-                <img mat-card-image style="width: 18vw;" src="assets/cakes.jpeg" alt="Angular Logo">
-                <mat-card-header>
-                  <mat-card-title>{{prod.product_name}}</mat-card-title>
-                  <mat-card-subtitle>
-                      {{prod.product_description}}
-                  </mat-card-subtitle>
-                </mat-card-header>
-            
-                <mat-card-actions>
-                  <button mat-raised-button color="primary" (click)="routeprod(prod.product_id)">Order Now</button>
-                </mat-card-actions>
-              </mat-card>
-            
-            </div>
-
-      </div>
-
+        <mat-card-actions>
+          <button (click)="routeprod(prod.product_id)">Order Now</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
   <app-footer></app-footer>
 </body>
