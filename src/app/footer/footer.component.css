@@ -65,11 +65,16 @@ ul li a{
     display: flex;
     text-align: left;
 }
-.rightmost>a, .rightmost>p, .rightmost>input{
+.rightmost>a, .rightmost>p{
     font-size: 1.5vw;
     color: black;
     text-decoration: none;
 }
+input{
+    
+    font-size: 1vw;
+}
+
 
 .fa-instagram {
     color: black;
@@ -88,4 +93,7 @@ ul li a{
 
 #sub{
     background-color: white;
+}
+#sub:hover{
+    background-color: #b2c3cf;
 }
