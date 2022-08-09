@@ -8,11 +8,11 @@
 
 #main-img{
     width: 15vw;
-    height:30vh;
-    margin-top: 2px;
-    margin-right:150px;
-    margin-left:0px;
-    margin-bottom: 2px;
+    height: 18vw;
+    margin-top: 1vw;
+    margin-right: 15vw;
+    margin-left: 0vw;
+    margin-bottom: 1vw;
 }
 
 h2{
@@ -33,6 +33,7 @@ p{
     justify-content: center;
     margin-left: 15vw;
     width:70vw;
+    height: 20vw;
     border: 1px solid black;
 }
 
@@ -43,7 +44,7 @@ p{
 }
 
 #price,#quantity{
-    margin-right:1cm;
+    margin-right:1vw;
 }
 
 #btncheckout{

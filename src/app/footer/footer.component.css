@@ -8,75 +8,62 @@
     margin-bottom: 0px;
 }
 
-.left{
-    margin-top: 8vh;
-    margin-bottom: 20vh;
-    margin-left: 5vw;
-    font-size: auto;
-}
-
 #name{
     font-family: 'Dancing Script', cursive;
     font-size: 3vw;
 }
 
-ul{
-    flex: 1;
+.left{
+    margin-bottom: 20vh;
+    margin-left: 5vw;
     flex-direction: column;
     display: flex;
-    font-family: 'Dancing Script';
-    font-size: 1vw;
-    text-align: left;
+    font-size: auto;
 }
-
-li{
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 2vw;
-    font-size:1.75vw;
-    text-decoration: none;
-    margin-bottom: 0.2vw;
-}
-
-ul li a{
-    text-decoration: none;
-    color: black;
-}
-
 
 .middle{
     margin-left: 5vw;
+    flex-direction: column;
+    display: flex;
     text-align: left;
-    margin-top: 8vh;
 }
 
 .right{
     margin-left:5vw;
-    margin-top: 8vh;
+    flex-direction: column;
+    display: flex;
     text-align: left;
+}
+
+.rightmost{
+    margin-left: 8vw;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+}
+
+.rightmost>a, .rightmost>p, .right>a, .right>p, .middle>a, .middle>p{
+    font-size: 1.5vw;
+    color: black;
+    text-decoration: none;
+}
+
+.last{
+    margin-left: 8vw;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+}
+
+input{
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
 }
 
 .connect{
     font-size: 1vw;
     text-align: left;
 }
-
-.rightmost{
-    margin-left: 8vw;
-    margin-top: 8vh;
-    flex-direction: column;
-    display: flex;
-    text-align: left;
-}
-.rightmost>a, .rightmost>p, .right>a, .right>p, .middle>a, .middle>p{
-    font-size: 1.5vw;
-    color: black;
-    text-decoration: none;
-}
-input{
-    font-size: 1vw;
-}
-
 
 .fa-instagram {
     color: black;
@@ -99,12 +86,4 @@ input{
 }
 #sub:hover{
     background-color: #b2c3cf;
-}
-
-.last{
-    margin-left: 8vw;
-    margin-top: 6vh;
-    flex-direction: column;
-    display: flex;
-    text-align: left;
 }
