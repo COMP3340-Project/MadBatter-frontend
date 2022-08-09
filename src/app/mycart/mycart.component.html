@@ -1,0 +1,13 @@
+<div class="table">
+
+<table *ngIf="prods.length > 1" datatable class="row-border hover">
+    <tbody >
+    <tr  *ngFor="let prod of prods">
+        <td style="padding-left: 0.7vw ;" class="tablequantity">{{prod.product_name}}</td>
+        <td class="tablematerial">{{prod.product_description}}</td>
+        <td class="tablequantity">{{prod.category_name}}</td>
+    </tr>
+    </tbody>
+</table>
+
+</div>

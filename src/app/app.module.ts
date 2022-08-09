@@ -43,6 +43,7 @@ import {LegalDisclaimerComponent} from "./legal-disclaimer/legal-disclaimer.comp
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 import {ReturnPolicyComponent} from "./return-policy/return-policy.component";
 import {SustainabilityComponent} from "./sustainability/sustainability.component";
+import { MycartComponent } from './mycart/mycart.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import {SustainabilityComponent} from "./sustainability/sustainability.component
     PrivacyPolicyComponent,
     ReturnPolicyComponent,
     SustainabilityComponent,
+    MycartComponent,
   ],
   imports: [
     MatFormFieldModule,
