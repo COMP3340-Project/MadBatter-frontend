@@ -1,0 +1,28 @@
+section{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#checkout{
+  margin-top: 20vh;
+  width:70vw;
+  height:40vh;
+  background-color: #e3f2fd;
+  border: 1px black solid;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top:4%;
+}
+
+div #img-cart{
+  height:15vh;
+  width:15vw;
+  position: absolute;
+  margin: 30px 50px 100px 520px;
+}

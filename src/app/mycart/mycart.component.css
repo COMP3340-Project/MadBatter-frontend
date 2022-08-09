@@ -1,0 +1,55 @@
+.cart-container{
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    background-color: white;
+    text-align: center;
+}
+
+#main-img{
+    width: 15vw;
+    height:30vh;
+    margin-top: 2px;
+    margin-right:150px;
+    margin-left:0px;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2vw;
+    margin-bottom: 0%;
+}
+
+p{
+    font-family: 'Courgette', cursive;
+    font-size: 1.5vw;
+    margin-bottom: 0%;
+}
+
+.profinal{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-left: 15vw;
+    width:70vw;
+    border: 1px solid black;
+}
+
+#desc{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+#price,#quantity{
+    margin-right:1cm;
+}
+
+#btncheckout{
+    font-family: 'Courgette', cursive;
+    font-size: 1.5vw;
+    margin-bottom: 0%;
+}
+
+

@@ -44,6 +44,9 @@ import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component"
 import {ReturnPolicyComponent} from "./return-policy/return-policy.component";
 import {SustainabilityComponent} from "./sustainability/sustainability.component";
 import { MycartComponent } from './mycart/mycart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+
+
 
 @NgModule({
   declarations: [
@@ -78,9 +81,12 @@ import { MycartComponent } from './mycart/mycart.component';
     ReturnPolicyComponent,
     SustainabilityComponent,
     MycartComponent,
+    CheckoutComponent,
+
   ],
   imports: [
     MatFormFieldModule,
+    MatCardModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,
@@ -109,6 +115,8 @@ import { MycartComponent } from './mycart/mycart.component';
         {path : 'privacy-policy', component:PrivacyPolicyComponent},
         {path : 'return-policy', component:ReturnPolicyComponent},
         {path : 'sustainability', component:SustainabilityComponent},
+        {path : 'mycart', component:MycartComponent},
+        {path : 'checkout', component:CheckoutComponent},
       {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,

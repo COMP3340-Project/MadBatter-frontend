@@ -11,7 +11,7 @@ export class Adminservice {
   allproductcategory : string[] = [];
   allusers : string[] = [];
   allusers1 : string[] = [];
-
+  productbycatlist:string[] = [];
   productdetailslist: string[] = [];
 
   errorMessage: any;
@@ -66,6 +66,29 @@ deleteproduct(productname:string,categoryid:number){
 
 return this.http.post<any>(`${environment.apiUrl}/api/v1/products/delete`, postData)
 }
+
+
+productsbycatid(category_id: number){
+    
+  this.productbycatlist.length = 0;
+  this.http.get<any>(`${environment.apiUrl}/api/v1/products/productsbycatid`, {
+    params: {
+      category_id: `${category_id}`
+    }}).subscribe({
+      next: data => {
+        for(let key in data)
+              if(data.hasOwnProperty(key))
+                  this.productbycatlist.push(data[key]);
+    
+         // this.allproducts = data;
+      }}),
+      
+
+  console.log(this.productbycatlist)
+  return this.productbycatlist;
+}
+
+
 
   productcategory(){
     this.allproductcategory.length = 0;

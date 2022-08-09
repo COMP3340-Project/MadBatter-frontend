@@ -1,13 +1,29 @@
-<div class="table">
+<!DOCTYPE html>
 
-<table *ngIf="prods.length > 1" datatable class="row-border hover">
-    <tbody >
-    <tr  *ngFor="let prod of prods">
-        <td style="padding-left: 0.7vw ;" class="tablequantity">{{prod.product_name}}</td>
-        <td class="tablematerial">{{prod.product_description}}</td>
-        <td class="tablequantity">{{prod.category_name}}</td>
-    </tr>
-    </tbody>
-</table>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mycart.component.css">
+</head>
 
-</div>
+<body>
+    <app-navbar></app-navbar>
+    <div class="cart-container">
+        <br>
+        <h1>Your Cart</h1>
+        <br>
+        <div class="profinal">
+                    <img id="main-img" src="../../assets/cakes.jpeg" alt="product image 1">
+                    <br>
+                    <div id="desc">
+                        <p id="price">Total Price: $20</p>
+                        <p id="quantity">Quantity: 2 </p>
+                    </div>                        
+        </div>
+        <br>
+        <button routerLink="/checkout" type="button" id="btncheckout">Checkout</button>
+        <br>
+        </div>
+    
+    <app-footer></app-footer>
+
+</body>

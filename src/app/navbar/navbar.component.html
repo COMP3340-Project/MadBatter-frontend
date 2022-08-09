@@ -4,40 +4,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind:wght@500&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind:wght@500&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
 
 </head>
-
-
-    <div class="container" style="width: auto;">
-        <nav style="background-color: #e3f2fd; height:4vh">
-          <a routerLink=""><img src="../../assets/img1.png" alt="Mad Batters logo" class="menu-img" /> </a>
-          <ul>
-            <li><a routerLink="/login"> Login </a></li>
-            <li><a routerLink="/signup"> Signup </a><li>
-            <li><a routerLink="/"> My Bag </a></li>
-          </ul>
-        </nav>  
-        
-        <br>
-        <nav style="background-color: #e3f2fd; height:1.5vh">
-            <ul style="text-align: left;">
+  <div class="container">
+      <nav style="background-color: #e3f2fd; height:8vw">
+        <a routerLink=""><img src="../../assets/img1.png" alt="Mad Batters logo" class="menu-img" /> </a>
+        <ul>
+          <li><a routerLink="/login"> Login </a></li>
+          <li><a routerLink="/signup"> Signup </a><li>
+          <li><a routerLink="/mycart" class="button fancy-button">
+            <i class="material-icons">shopping_cart</i>Cart</a></li>
+        </ul>
+      </nav>  
+      
+      <br>
+      <nav style="background-color: #e3f2fd; height:6vw">
+          <ul style="text-align: left;">
+              <li  *ngFor="let catg of catgs">
+                <a (click)="routecat(catg.category_id,catg.category_name)">{{catg.category_name}}</a>
+              </li>
               
-                <li><a routerLink="/category">Cakes</a></li>
-                <li><a routerLink="/category">Brownies</a></li>
-                <li><a routerLink="/category">Muffins</a></li>
-                <li><a routerLink="/category">Pies</a></li>
-              </ul>
-              <ul style="text-align: right;">
-                <li><a routerLink="/about-us">About Us</a></li>
-                <li><a routerLink="/contact-us">Contact Us</a></li>
-              </ul>
-        </nav>    
-     </div>
-
-
+            </ul>
+            <ul style="text-align: right;">
+              <li><a routerLink="/about-us">About Us</a></li>
+              <li><a routerLink="/contact-us">Contact Us</a></li>
+            </ul>
+      </nav>    
+    </div>
