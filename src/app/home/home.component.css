@@ -12,10 +12,16 @@ object-fit: cover;
 /*content Container */
 #container
 {
-    background-color: #e3f2fd;  /*  <<<<<<< HEAD =======*/
+     /*  <<<<<<< HEAD =======*/
 /*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
-margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border:1.5px solid black;
+    border-radius: 10px;
+    padding-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 3vh;
 }
 
 /*Slideshow stuff*/
@@ -44,6 +50,7 @@ margin-right: 15%;
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .gridContainerOne

@@ -1,0 +1,189 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    color:#c0c0f0;
+    background-color: #24244e;
+
+}
+
+.sidebaroptions{
+    margin-top: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    color:#c0c0f0;
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20%;
+}
+
+.logoheading{
+    margin-left: 4%;
+    margin-top: 3.5%;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+.input-btn-manag{
+    background-color: #303069;
+    border: 0;
+    width: 13vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-btn-dash{
+    background-color: #24244e;
+    border: 0;
+    width: 14vw;
+    border-radius: 5%;
+    color:#c0c0f0;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-btn-dash:hover{
+    background-color: #303069;
+    border: 0;
+    width: 13vw;
+    border-radius: 5%;
+    color:white;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.input-btn-logout{
+
+   
+    background-color: #24244e;
+    border: 0;
+    width: 14vw;
+    border-radius: 5%;
+    color: #c0c0f0;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.input-btn-logout:hover{
+
+   
+
+    background-color: #303069;
+    border: 0;
+    width: 13vw;
+    border-radius: 5%;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.projectheading{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 45px;
+    font-weight: 380;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    height: 97vh;
+    color:black;
+    margin-top: 3vh;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.heading{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.firstrowofcomponents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secondrowofcomponents{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+.productrecords{
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 48vw;
+    height: 45vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.categoryrecords{
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 50vw;
+    height: 45vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.userrecords{
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 62vw;
+    height: 45vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+
+
+.columns{
+display: flex;
+flex-direction: column;
+}
+
+.subheading{
+    margin-top: 1vh;
+    margin-left: 1vw;
+}

@@ -86,8 +86,7 @@ export class LoginComponent implements OnInit {
             title: 'Successful Login 😁!'
           });
 
-
-        }else{
+        }if(data[0].permission == ''){
           this.Toast.fire({
             icon: 'error',
             title: 'UnSuccessful :('

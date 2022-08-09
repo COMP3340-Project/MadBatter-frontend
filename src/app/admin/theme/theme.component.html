@@ -9,10 +9,10 @@
             <button class="input-btn-dash">
                 <p>DashBoard</p>
             </button>
-            <button class="input-btn-manag" >
+            <button class="input-btn-dash" (click)="management()" >
                 <p>Mangement</p>
             </button>
-            <button class="input-btn-dash" (click)="theme()" >
+            <button class="input-btn-manag"  >
                 <p>Theme</p>
             </button>
             <button class="input-btn-logout" (click)="logout()" >
@@ -22,20 +22,11 @@
     </div>
     <div class=content>
     <h1 class="projectheading">Management Tool</h1>
-       <h1 class="heading">Management Center</h1>
+       <h1 class="heading">Theme Center</h1>
        <div class="firstrowofcomponents">
-            <div class="productrecords">
-              <app-productrecord></app-productrecord>
-            </div>
             <div class="categoryrecords">
-             <app-categoryrecord></app-categoryrecord>
+             <app-updatetheme></app-updatetheme>
             </div>
-        </div>
-        <div class="secondrowofcomponents">
-            <div class="userrecords">
-                <app-userrecord></app-userrecord>
-            </div>
-            
         </div>
     </div>
 </div>

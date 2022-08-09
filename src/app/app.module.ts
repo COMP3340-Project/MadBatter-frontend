@@ -43,6 +43,8 @@ import {LegalDisclaimerComponent} from "./legal-disclaimer/legal-disclaimer.comp
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 import {ReturnPolicyComponent} from "./return-policy/return-policy.component";
 import {SustainabilityComponent} from "./sustainability/sustainability.component";
+import { ThemeComponent } from './admin/theme/theme.component';
+import { UpdatethemeComponent } from './admin/theme/updatetheme/updatetheme.component';
 
 
 
@@ -78,6 +80,8 @@ import {SustainabilityComponent} from "./sustainability/sustainability.component
     PrivacyPolicyComponent,
     ReturnPolicyComponent,
     SustainabilityComponent,
+    ThemeComponent,
+    UpdatethemeComponent
 
   ],
   imports: [
@@ -97,20 +101,21 @@ import {SustainabilityComponent} from "./sustainability/sustainability.component
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
       {path: 'admin/management', component: ManagpageComponent},
+      {path: 'admin/theme', component: ThemeComponent},
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignUpComponent},
       {path: 'product', component: ProductPageComponent},
       {path:'not-found',component:HomepageComponent},
       {path: 'category',component:CategoryComponent},
       {path : 'about-us', component:AboutUsPageComponent},
-        {path : 'contact-us', component:ContactUsPageComponent},
-        {path : 'careers', component:CareersComponent},
-        {path : 'faq', component:FAQComponent},
-        {path : 'for-investors', component:ForInvestorsComponent},
-        {path : 'legal-disclaimer', component:LegalDisclaimerComponent},
-        {path : 'privacy-policy', component:PrivacyPolicyComponent},
-        {path : 'return-policy', component:ReturnPolicyComponent},
-        {path : 'sustainability', component:SustainabilityComponent},
+      {path : 'contact-us', component:ContactUsPageComponent},
+      {path : 'careers', component:CareersComponent},
+      {path : 'faq', component:FAQComponent},
+      {path : 'for-investors', component:ForInvestorsComponent},
+      {path : 'legal-disclaimer', component:LegalDisclaimerComponent},
+      {path : 'privacy-policy', component:PrivacyPolicyComponent},
+      {path : 'return-policy', component:ReturnPolicyComponent},
+      {path : 'sustainability', component:SustainabilityComponent},
       {path:'**',component:HomepageComponent}
     ]),
     BrowserAnimationsModule,

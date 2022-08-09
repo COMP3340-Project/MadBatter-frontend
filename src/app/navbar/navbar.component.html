@@ -9,7 +9,7 @@
 
 </head>
   <div class="container">
-      <nav style="background-color: #e3f2fd; height:8vw">
+      <nav [ngStyle]="{'background-color': theme}"style="height:8vw ">
         <a routerLink=""><img src="../../assets/img1.png" alt="Mad Batters logo" class="menu-img" /> </a>
         <ul>
           <li><a routerLink="/login"> Login </a></li>
@@ -19,8 +19,8 @@
       </nav>  
       
       <br>
-      <nav style="background-color: #e3f2fd; height:3vw">
-          <ul style="text-align: left; margin-left: 4vw;">
+      <nav [ngStyle]="{'background-color': theme}" style=" height:3vw">
+          <ul style="text-align: left; margin-left: 0vw;">
               <li  *ngFor="let catg of catgs">
                 <a (click)="routecat(catg.category_id,catg.category_name)">{{catg.category_name}}</a>
               </li>

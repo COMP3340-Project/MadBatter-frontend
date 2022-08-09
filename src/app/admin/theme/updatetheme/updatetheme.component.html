@@ -1,0 +1,39 @@
+<div class="componentheader">
+    <div class="subheadingtext">
+        <h1 class="subheading">Theme</h1>
+    </div>
+    
+</div>
+<div class="table">
+
+    <h1 *ngIf="themes.length < 1" class="loading">loading ...</h1>
+
+    <table *ngIf="themes.length > 1" datatable class="row-border hover">
+    <thead>
+    <tr>
+        <th  class="tablematid">Theme Name</th>
+        <th class="tableid">Theme Color</th>
+        <th  class="tablematid">Status</th>
+    </tr>
+    <tr>
+        <th  class="tablematid"><hr></th>
+        <th class="tableid"><hr></th>
+        <th  class="tablematid"><hr></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let theme of themes">
+        <td class="tablematid">{{theme.themeName}}</td>
+        <td class="tableid">{{theme.themecolor}}</td>
+        <td class="tableid">
+            <button class="updatebutton" (click)="updatetheme(theme.themeName)">
+
+                {{theme.activecolor}}
+
+            </button>
+        
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>

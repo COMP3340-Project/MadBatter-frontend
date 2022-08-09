@@ -11,8 +11,10 @@ export class Adminservice {
   allproductcategory : string[] = [];
   allusers : string[] = [];
   allusers1 : string[] = [];
-  productbycatlist:string[] = [];
+  productbycatlist: string[] = [];
   productdetailslist: string[] = [];
+
+  activetheme : string[] = [];
 
   errorMessage: any;
   
@@ -211,6 +213,66 @@ productsbycatid(category_id: number){
     return this.productdetailslist;
 }
 
+theme(){
+  this.activetheme.length = 0;
+  this.http.get<any>(`${environment.apiUrl}/api/v1/theme/all`).subscribe({
+      next: data => {
+        for(let key in data)
+              if(data.hasOwnProperty(key))
+                  this.activetheme.push(data[key]);
+    
+         // this.allproducts = data;
+      },
+      error: error => {
+          this.errorMessage = error.message;
+          console.error('There was an error!', error);
+      }
+  })
 
+
+
+  console.log(this.activetheme)
+  return this.activetheme;
 }
 
+
+updatetable(themename:string){
+  this.activetheme.length = 0;
+    this.http.get<any>(`${environment.apiUrl}/api/v1/theme/updatetable`, {
+      params: {
+        themename: `${themename}`
+      }}).subscribe({
+        next: data => {
+          for(let key in data)
+                if(data.hasOwnProperty(key))
+                    this.activetheme.push(data[key]);
+      
+           // this.allproducts = data;
+        }}),
+        
+  
+    console.log(this.activetheme)
+    return this.activetheme;
+}
+
+updatetheme(themename:string){
+  this.activetheme.length = 0;
+  this.http.get<any>(`${environment.apiUrl}/api/v1/theme/updatetheme`, {
+    params: {
+      themename: `${themename}`
+    }}).subscribe({
+      next: data => {
+        for(let key in data)
+              if(data.hasOwnProperty(key))
+                  this.activetheme.push(data[key]);
+    
+         // this.allproducts = data;
+      }}),
+      
+
+  console.log(this.activetheme)
+  return this.activetheme;
+}
+
+
+}

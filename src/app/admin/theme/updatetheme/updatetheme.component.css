@@ -1,0 +1,145 @@
+.componentheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subheadingtext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 55%;
+}
+
+.subheading{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    font-weight: 550;
+    font-size: 24px;
+}
+
+.subheadingbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+}
+
+
+.dropdownselection{
+    margin-right: 30px;
+    border: 0;
+    background-color: none;
+    width:150px;
+    height: 35px;
+    font:22px;
+}
+
+.weeklyreportbutton{
+    border: 0;
+    background-color: none;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th{
+    vertical-align: middle;
+}
+
+td {
+    vertical-align: middle;
+  }
+
+.table td, .table th {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.table{
+    height: 40vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.tableid{
+    width: 18vw;
+    text-align: end;
+    padding-right: 0.5vw;
+}
+
+
+.tablematid{
+    width: 19vw;
+    text-align: center;
+}
+
+.updatebutton{
+    width: 7vw;
+    height:4vh
+}
+
+@media only screen and (min-width: 1892px) {
+    .componentheader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .subheadingtext{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 60%;
+    }
+    
+    .subheading{
+        margin-top: 1vh;
+        margin-left: 1vw;
+        font-weight: 550;
+        font-size: 24px;
+    }
+    
+    .subheadingbutton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40%;
+    }
+
+    .weeklyreportbutton{
+        border: 0;
+        background-color: none;
+    }
+    
+    th{
+        vertical-align: middle;
+    }
+    
+    td {
+        vertical-align: middle;
+      }
+    
+    .table td, .table th {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .tablematerial{
+        width: 18vw;
+        margin-left: 3vw;
+    }
+    
+    .tablequantity{
+        width: 12vw;
+        margin-left: 3vw;
+        text-align: center;
+    }
+  }
