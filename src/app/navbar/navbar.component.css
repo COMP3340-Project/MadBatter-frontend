@@ -28,7 +28,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     list-style-type: none;
-    margin: 0vw 1.5vw;
+    margin-right: 1.5vw;
 }
 
 nav ul li a{
