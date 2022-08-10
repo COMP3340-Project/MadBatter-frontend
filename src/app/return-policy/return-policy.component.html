@@ -38,26 +38,27 @@
                 </p>
             </div>
             <div id="inputBox">
+                <form method="post" action="return-policy.component.php">
                 <label>First Name </label>
-                <input type="text" required>
-                <label>Last Name </label>
-                <input type="text" required>
+                <input type="text" name="firstName" required>
+                <label> Last Name </label>
+                <input type="text" name="lastName" required>
                 <br>
                 <br>
                 <label>Email </label>
-                <input type="text" required>
-                <label>Reason for Refund </label>
-                <input type="text" required>
+                <input type="text" name="custEmail" required>
+                <label> Reason for Refund </label>
+                <input type="text" name="subject" required>
                 <br>
                 <br>
                 <label>Additional information if required</label>
                 <br>
-                <textarea rows="15" cols="50">
+                <textarea rows="15" cols="50" name="message">
                 </textarea>
                 <br>
-                <button type="submit">Submit Request</button>
-                <button type="reset">Reset</button>
-
+                <input type="submit" name="Submit">
+                <input type="reset" name="Reset">
+                </form>
             </div>
             <br>
         </div>
