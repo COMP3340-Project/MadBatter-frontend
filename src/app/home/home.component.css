@@ -1,19 +1,34 @@
 body
 {
     margin: 0;
-
-   /* <<<<<<< HEAD
-        /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycGFwZXJfYmFja2dyb3VuZF9vbGRfbXVsdGlfMy1pbWFnZS1reWJjeWF2bC5qcGc.jpg"); */
-    /*=======*/
     font-family: "Poppins", sans-serif;
-/*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
-object-fit: cover;
+    object-fit: cover;
 }
+
+#weatherContainer
+{
+
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: fit-content;
+    background-color: #e3f2fd;
+    color: black;
+}
+
+.weather
+{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
 /*content Container */
 #container
 {
-     /*  <<<<<<< HEAD =======*/
-/*>>>>>>> 24c4a307e09c77a3c2984bcbc0472852bb950a6b*/
+
     margin-right: 10%;
     margin-left: 10%;
     border:1.5px solid black;
