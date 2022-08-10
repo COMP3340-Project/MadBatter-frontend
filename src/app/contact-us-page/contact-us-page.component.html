@@ -1,3 +1,5 @@
+<?php include 'contact-us-page.component.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +25,17 @@
 <br>
 <div class="contactText">
     <!--Company Story-->
-    <span class="header">Enter your Message</span>
-    <br>
-    <br>
-    <textarea>Dear MadBatter team,...</textarea>
-    <br>
-    <button type="submit" formaction="email">Send Message</button>
-    <br>
+    <form method="post" action="contact-us-page.component.php" onsubmit="submitted()">
+        <p>Please enter the subject of your question below</p>
+        <input type="text" name="subject">
+        <p>Enter your email below</p>
+        <input type="text" name="senderEmail" required>
+        <p>Please enter your message below</p>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        <input type="submit" name="submitButton" value="Send Email">
+        <input type="reset">
+    </form>
 </div>
 <br>
 </div>
